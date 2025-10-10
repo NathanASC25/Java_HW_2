@@ -11,9 +11,11 @@ public class ExtractDigits {
 	if (n < 0) {
 	    n *= -1;
 	}
+	// Determine the digits of multiplier. If 3 digits, multiplier is 100
 	while (n >= multiplier * 10) {
 	    multiplier *= 10;
 	}
+	// Extract each digit with the while loop below, using modulo
         while (multiplier >= 1) {
 	    int tempInput = n;
 	    if (wasNegative && count == 1) { 
