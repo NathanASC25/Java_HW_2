@@ -1,18 +1,24 @@
 public class JavaWorkbook {
     public static void main(String[] args){
-	int a, b, y, z, x;
-	a = 4;
-	b = 3;
-	y = 5;
-	z = 1;
-	x = 0;
-	// Section 3.2 Problem 3b)
-	if (a > z && b > y) {
-	    x = 2;
+	int a, b, c, d, e;
+
+	a = 1;
+	b = 18;
+	c = 6;
+	d = 42;
+	e = 8;
+	if (!(a == b && c * c <= 100 || d != e/8)) {
+	    System.out.println("valid");
 	}
-	else if (a > z) {
-	    x = 7;
+	else {
+            System.out.println("invalid");
 	}
-	System.out.printf("\n%d\n", x);
+	if (1000 > a + b * b * 10 || !(e * d == a / d)){
+	    a = a + b;
+	}
+	else {
+	    a = a - b;
+	}
+	System.out.println(a);
     }
 }
