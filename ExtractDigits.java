@@ -21,7 +21,7 @@ public class ExtractDigits {
 	    if (wasNegative && count == 1) { 
 		System.out.print("-");
 	    }
-	    while (tempInput > 10) {
+	    while (tempInput >= 10) {
 		if (count > 1 && multiplier > 1) {
 		    int tempMulti = multiplier;
 		    tempInput /= multiplier;
