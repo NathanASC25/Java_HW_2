@@ -18,7 +18,7 @@ public class ExtractDigits2 {
 	while (inputNum % modulusNum != inputNum) {
 	    modulusNum *= 10;
 	}
-	// While the modulo/divisor value is greater than or equal to 10, each digit from the input number is extracted and printed out
+	// While the modulo/divisor value is greater than or equal to 10, each digit from the input number is extracted and printed out (left to right)
 	while (modulusNum >= 10) {
 	    System.out.printf("%d ", (inputNum % modulusNum) / (modulusNum / 10));
 	    modulusNum /= 10;
